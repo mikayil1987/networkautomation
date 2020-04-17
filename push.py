@@ -21,6 +21,7 @@ remote_connection.send("end\n")
 remote_connection.send("exit\n")
 
 ## Loop configuration method.
+## you can make configuration here.  
 #for n in range (2,21):
 #    print "Creating VLAN " + str(n)
 #    remote_connection.send("vlan " + str(n) +  "\n")
