@@ -21,7 +21,7 @@ remote_connection.send("end\n")
 remote_connection.send("exit\n")
 
 ## Loop configuration method.
-## you can make configuration here.  
+## you can make configuration here.
 #for n in range (2,21):
 #    print "Creating VLAN " + str(n)
 #    remote_connection.send("vlan " + str(n) +  "\n")
@@ -33,3 +33,6 @@ remote_connection.send("end\n")
 time.sleep(1)
 output = remote_connection.recv(65535)
 print (output)
+
+
+## adding comment from atom 
