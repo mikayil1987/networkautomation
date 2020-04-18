@@ -10,8 +10,9 @@ with open('hosts.yaml', 'r') as f:
     doc = yaml.full_load(f)
 
 
-
+## Get SFO Routers IP addresses from yaml
 SFORouters = doc["Network"]["SFO"]["Core"]["Router"]
+## Get SFO Switches IP addresses from yaml
 SFOSwitches = doc["Network"]["SFO"]["Access"]["Switch"]
 
 def RoutersIP():
