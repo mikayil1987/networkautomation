@@ -1,0 +1,40 @@
+Network:
+  # Core Network for all location
+  SFO: # San Francisco Location
+    # Username and Passwords for the Routers
+    username: cisco
+    password: cisco
+    enable: 1234
+    # Network Devices
+    Core:
+      Switch:
+      Router:
+         # Routers List
+        -
+          hostname: 'R1'
+          IP: 192.168.60.20
+        -
+          hostname: 'R2'
+          IP: 192.168.60.21
+    Access:
+      Switch:
+        -
+          hostname: "SW-1"
+          IP: "192.168.60.10"
+        -
+          hostname: "SW-2"
+          IP: "192.168.60.11"
+        -
+          hostname: "SW-3"
+          IP: "192.168.60.12"
+    Distribution:
+  MA: # Massachusetts location
+    username: cisco
+    password: cisco
+    enable: 1234
+    # Network Devices
+    Core:
+      Switch:
+      Router:
+    Access:
+    Distribution:
