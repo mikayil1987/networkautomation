@@ -18,10 +18,12 @@ SFOSwitches = doc["Network"]["SFO"]["Access"]["Switch"]
 def RoutersIP():
     for iprouters in SFORouters:
         IP = iprouters.get('IP')
+        print (IP)
 
 def SwitchesIP():
     for ipswitches in SFOSwitches:
         IP = ipswitches.get('IP')
+        print (IP)
 
 RoutersIP()
 SwitchesIP()
