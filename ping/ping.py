@@ -3,8 +3,9 @@
 import os
 import time
 
-hostnames = open('hosts.txt','r')
-lines = hostnames.read().splitlines()
+# hostnames or IP addresses in hosts.txt file. You can modify it with your internal IP addresses
+hostnames = open('hosts.txt','r') 
+lines = hostnames.read().splitlines() 
 
 
 with open('output.txt','w+') as file: # open output.txt file and write
