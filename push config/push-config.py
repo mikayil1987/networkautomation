@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#! /usr/bin/env python3
 
 import paramiko
 import time
@@ -35,4 +35,4 @@ output = remote_connection.recv(65535)
 print (output)
 
 
-## adding comment from atom 
+## adding comment from atom
