@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 from netmiko import Netmiko
 from netmiko import ConnectHandler
 import time
