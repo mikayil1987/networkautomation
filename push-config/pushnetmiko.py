@@ -16,19 +16,19 @@ cisco_device = {
         'verbose': True
 }
 
-## if it is not in enable mode, it will switch to enable mode.
+## checking for enable mode. it will change it to enable mode.
 prompt = connection.find_prompt()
-
 if '>' in prompt:
     connection.enable()
 
-
+# checking for config mode. it will change it to config mode.
 mode = connection.check_config_mode()
-
 if not mode:
     connection.config_mode()
 
+# Connecting to device
 connection = ConnectHandler(**cisco_device)
+# showing the output from the devices. 
 output = connection.send_command('do sho ip int br')
 print(output)
 connection.disconnect()
